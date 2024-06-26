@@ -1,0 +1,79 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.zhuye{
+	margin-left: 90%;
+	margin-top: 15px;
+	font-size: 20px;
+}
+.zhuye a{
+	color: yellow;
+	text-decoration: none;
+}
+body {
+	background: url("../img/xq1.png");
+}
+.tou {
+	height: 100px;
+	width: 100%;
+}
+.title {
+	width: 1200px;
+	height: 100px;
+	background-position: center;
+	color: #fff;
+}
+
+.title h1 {
+	padding-left: 650px;
+	line-height: 200px;
+	color: #812918;
+}
+.title p {
+	padding-left: 600px;
+	color: #B4B4B4;
+	font-size: 20px;
+}
+#box1 {
+	width: 1100px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+#box1 h3 {
+	border-bottom: 1px solid #d9bb43;
+	padding: 10px 0px;
+	margin-bottom: 30px;
+}
+
+/* #box1 h3 span {
+	color: #878787;
+	font-size: 20px;
+	margin-left: 10px;
+} */
+
+
+.box1-txt {
+	padding: 20px;
+}
+
+.tupian{
+	float: left;
+	width: 230px;
+	height: 300px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.box1-txt p {
+	text-indent: 2rem;
+	line-height: 2em;
+	color: #333;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+.zx h6{
+	text-align: center;
+}

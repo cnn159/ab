@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>思政案例分享首页</title>
+		<link rel="stylesheet" type="text/css" href="css/TC.css">
+	</head>
+	<body>
+		<!-- <script type="text/javascript">
+			alert('欢迎来到思政案例分享网站');
+		</script> -->
+		<div class="header">
+			<div class="ab">
+				<div class="logo"><img src="img1/logo.png" width="70px" height="50px"/></div>
+				<div class="dl">
+					<form action="#" method="post" name="shousuo">
+						<input type="text" placeholder="请输入关键字" width="100" height="30"/>
+						<input type="submit" value="搜索" />
+					</form>
+				</div>
+				<div class="denglu">
+					<a href="denglu.html">登录/注册</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="nav">
+			<div class="ac">
+				<ul>
+					<li><a href="#">网站首页</a></li>
+					<li><a href="xiangqing.html">优秀党员</a>
+						<div class="xiala">
+							<ul>
+								<li><a href="#">时代楷模</a></li>
+								<li><a href="#">荣誉表彰</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">社会实践</a>
+						<div class="xiala">
+							<ul>
+								<li><a href="#">社会调查</a></li>
+								<li><a href="#">志愿服务</a></li>
+								<li><a href="#">文化传承</a></li>
+								<li><a href="#">科技创新</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">视频学习</a>
+						<div class="xiala">
+							<ul>
+								<li><a href="#">感动中国</a></li>
+								<li><a href="#">思政课堂</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="liebiao.html">资料库</a>
+						<div class="xiala">
+							<ul>
+								<li><a href="#">共和国勋章</a></li>
+								<li><a href="#">七一勋章</a></li>
+								<li><a href="#">八一勋章</a></li>
+								<li><a href="#">友谊勋章</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="xinde.html">心得分享</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="banner">
+			<div class="banner_pic" id="banner_pic">
+				<div class="current"><img src="img1/1.png" width="1000" height="450" /></div>
+				<div class="pic"><img src="img1/2.png" width="1000" height="450" /></div>
+				<div class="pic"><img src="img1/3.png" width="1000" height="450" /></div>
+				<div class="pic"><img src="img1/4.png" width="1000" height="450" /></div>
+			</div>
+			<ol id="button">
+				<li class="current"></li>
+				<li class="but"></li>
+				<li class="but"></li>
+				<li class="but"></li>
+			</ol>
+		</div>
+		<script>
+			var current_index = 0;
+			var timer = window.setInterval(autoChange, 3000);
+			var button_li = document.getElementById("button").getElementsByTagName("li");
+			var pic_div = document.getElementById("banner_pic").getElementsByTagName("div");
+			for (var i = 0; i < button_li.length; i++) {
+				button_li[i].onmouseover = function() {
+					if (timer) {
+						clearInterval(timer);
+					}
+					for (var j = 0; j < pic_div.length; j++) {
+						if (button_li[j] == this) {
+							current_index = j;
+							button_li[j].className = "current";
+							pic_div[j].className = "current";
+						} else {
+							pic_div[j].className = "pic";
+							button_li[j].className = "but";
+						}
+					}
+				}
+				button_li[i].onmouseout = function() {
+					timer = setInterval(autoChange, 3000);
+				}
+			}
+
+			function autoChange() {
+				++current_index;
+				if (current_index == button_li.length) {
+					current_index = 0;
+				}
+				for (var i = 0; i < button_li.length; i++) {
+					if (i == current_index) {
+						button_li[i].className = "current";
+						pic_div[i].className = "current";
+					} else {
+						button_li[i].className = "but";
+						pic_div[i].className = "pic";
+					}
+				}
+			}
+		</script>
+
+
+		<div class="conteen">
+			<div class="line1">
+				<div class="line1-left ">
+					<div class="left1">
+						<img src="img1/tubiao.png" width="50px" height="50px" / style="float: left;">
+						<div class="text1"><a href="xiangqing.html">先锋人物</a></div>
+					</div>
+					<div class="left2">
+						<div class="shu1"><img src="img1/renwu1.png" width="115" height="150" /></div>
+						<div class="shu2"><img src="img1/renwu2.png" width="115" height="150" /></div>
+						<div class="shu3"><img src="img1/renwu3.png" width="115" height="150" /></div>
+						<p>[海军南昌舰党委]&nbsp;&nbsp;&nbsp;忠心向党、向海图强</p>
+						<p>[杨根思连]&nbsp;&nbsp;&nbsp;“三个不相信”英雄宣言跨越时空传递奋进的力量</p>
+						<p>[陈俊武]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;矢志报国七十载 满腔热情终无悔</p>
+						<p>[彭士禄]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一生愿做拓荒牛 心系祖国核事业</p>
+						<p>[鲍卫忠]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;执法如山 一心为民</p>
+					</div>
+				</div>
+				<div class="line1-ri">
+					<div class="left1">
+						<img src="img1/tubiao.png" width="50px" height="50px" / style="float: left;">
+						<div class="text1"><a href="#">思政微课堂</a></div>
+					</div>
+					<div class="ri2">
+						<div class="shiping">
+							<video src="img1/shipin.mp4" controls="controls"
+								style="width: 400px; height: 300px;"></video>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="line2">
+				<div class="line2-left">
+					<div class="left1">
+						<img src="img1/tubiao.png" width="50px" height="50px" / style="float: left;">
+						<div class="text2"><a href="liebiao.html">功勋荣誉</a></div>
+					</div>
+					<div class="left2">
+						<div class="hanyu1">
+							<img src="img1/gxun1.png" width="200" height="150" />
+							<h6>共和国勋章 袁隆平</h6>
+						</div>
+						<div class="hanyu2">
+							<img src="img1/gxun2.png" width="200" height="150" />
+							<h6>七一勋章 王占山</h6>
+						</div>
+						<div class="hanyu3">
+							<img src="img1/gxun3.png" width="200" height="150" />
+							<h6>八一勋章 李中华</h6>
+						</div>
+						<div class="hanyu4">
+							<img src="img1/gxun4.png" width="200" height="150" />
+							<h6>友谊勋章 普京</h6>
+						</div>
+					</div>
+				</div>
+				<div class="line2-ri">
+					<div class="left1">
+						<img src="img1/tubiao.png" width="50px" height="50px" / style="float: left;">
+						<div class="text3"><a href="#">社会实践</a></div>
+					</div>
+					<div class="right">
+						<div>
+							<img src="img1/shijian1.jpg" style="float: left;height: 90px;width: 120px;" />
+							<div class="jianjie"><strong>捐赠旧物活动</strong><br />
+								电气与信息工程学院在校园内开展捐赠旧物活动，同学们可用两件以上旧物换盆栽、鼠标垫、跳绳等物品。
+							</div>
+						</div>
+						<div>
+							<img src="img1/shijian2.jpg" style="float: left;height: 90px;width: 120px" />
+							<div class="jianjie"><strong>爱心义卖活动</strong><br />
+								本次爱心义卖活动的物品来源于电气与信息工程学院同学们的闲置，所得善款全部捐赠给天胜社区慈爱心智障碍者家庭互助中心。
+							</div>
+						</div>
+						<div>
+							<img src="img1/shijian3.jpg" style="float: left;height: 90px;width: 120px" />
+							<div class="jianjie"><strong>关爱一老一小志愿活动</strong><br />
+								志愿者们对社区独居老人、残疾人、困难家庭等群体进行走访慰问活动，通过发放粽子、豆油等慰问品，传递了节日的祝福和温暖。
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="aa">
+				<div class="banquan">
+					<p>&copy;程诺 20220002165</p>
+					<p>电话：17395960000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电子邮箱：1002859000@qq.com</p>
+					<p>地址：吉林省吉林市昌邑区翰林路77号吉林农业科技学院</p>
+				</div>
+				<div class="shanghua">
+					<a href="javascript:scroll(0,0)" ;><img src="img1/jiantou.png" ; /></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

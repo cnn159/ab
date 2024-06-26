@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+
+.header {
+	width: 100%;
+	height: 200px;
+	display: flex;
+}
+
+.ab {
+	width: 1700px;
+	height: 200px;
+	margin: auto;
+	background-image: url('../img1/beijingtu1.png');
+}
+
+.logo {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.dl {
+	margin-top: 10px;
+	margin-right: 40px;
+	display: inline-block;
+	float: right;
+}
+
+.denglu {
+	margin-top: 150px;
+	margin-right: -200px;
+	display: inline-block;
+	float: right;
+}
+
+.denglu a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.denglu a:hover {
+	color: yellow;
+}
+
+.ac {
+	width: 1300px;
+	height: 40px;
+	margin: auto;
+}
+
+.ac ul li {
+	margin-left: 25px;
+	margin-top: 5px;
+}
+
+.xiala ul li {
+	margin: auto;
+}
+
+.nav {
+	width: 100%;
+	height: 50px;
+	line-height: 40px;
+	vertical-align: middle;
+	background-color: firebrick;
+	position: relative;
+	align-items: center;
+}
+
+.nav ul {
+	list-style: none;
+	display: flex;
+	margin-left: 20%;
+}
+
+.nav ul li {
+	width: 100px;
+	position: relative;
+	text-align: center;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.nav ul li a:hover {
+	color: #d6d618;
+}
+
+.xiala {
+	display: none;
+}
+
+.nav ul li:hover .xiala {
+	display: block;
+	position: absolute;
+	background-color: brown;
+	z-index: 100;
+}
+
+.nav ul li:hover .xiala ul {
+	display: block;
+	margin: 10px;
+}
+
+
+.box{
+	background-image: url("../img/denglu1.png");
+}
+.fabu{
+	margin: auto;
+}
+.sub {
+	margin-left: 740px;
+	width: 200px;
+	color: #ffffff;
+	background-color: #ffaa7f;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.biaoti{
+	text-align: center;
+	font-size: 30px;
+}
+.neirong{
+	width: 1000px;
+	height: 500px;
+	border: solid;
+	border-radius: 5%;
+	text-align: center;
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+	width: 100%;
+	background: gray;
+	clear: both;
+	padding-bottom: 25px;
+}
+
+.banquan {
+	width: 500px;
+	margin-left: 30%;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.shanghua {
+	width: 70px;
+	height: 70px;
+	margin-left: 90%;
+	margin-top: -65px;
+}
+
+.aa {
+	width: 1000px;
+	margin: auto;
+}
